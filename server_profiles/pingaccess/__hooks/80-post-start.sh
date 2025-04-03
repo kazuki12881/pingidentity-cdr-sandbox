@@ -23,7 +23,3 @@ if test ${RUN_PLAN} = "START" ; then
   fi
 fi
 
-if [[ ! -z "${OPERATIONAL_MODE}" && "${OPERATIONAL_MODE}" = "CLUSTERED_CONSOLE" ]]; then
-  echo "Bringing eth0 back up..."
-  ip link set eth0 up
-fi 
